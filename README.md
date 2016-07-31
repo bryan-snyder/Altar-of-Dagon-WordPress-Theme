@@ -8,3 +8,6 @@ As you can see, much work to be done. Going from a static build which I just rec
 I'm building this theme from scractch. Feel free to follow my progress and I'm always open to suggestions.
 
 By the time I'm done building this, it will be a full start to finish WordPress Theme creation tutorial of sorts.
+
+#Plugins:
+At this point only Akismet is installed. I'm not going to track what plugin's I'm using, only ones I create myself that are necessary for the theme to function properly.
