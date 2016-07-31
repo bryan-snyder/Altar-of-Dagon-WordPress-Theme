@@ -1,5 +1,5 @@
 # Altar-of-Dagon-WordPress-Theme
-I am creating this WordPress theme for the band I'm currently playing in **Altar of Dagon**. Not going to be much public interest here but I hope to grow it into a larger, more customizable, theme that can be distributed.
+I am creating this WordPress theme for the band I'm currently playing in **Altar of Dagon**. Not going to be much public interest here but I hope to grow it into a larger, more customizable theme that can be distributed.
 
 This WordPress theme will eventually reside here: [altarofdagon.com](http://altarofdagon.com)
 
@@ -13,3 +13,6 @@ By the time I'm done building this, it will be a full start to finish WordPress 
 At this point only Akismet is installed. I'm not going to track what plugin's I'm using, only ones I create myself that are necessary for the theme to function properly.
 
 If you're dying to know if I'm using any third party plug-in's... check my .gitignore file, you'll see me blocking them.
+
+##Theme Customizer:
+I will be creating theme customizer options within this build. If you're looking to learn to create customizer "plug ins", I'll have some knowledge to share.
