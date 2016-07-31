@@ -26,7 +26,7 @@ If you're dying to know if I'm using any third party plug-in's... check my .giti
 
 Here's what I plan to use:
   * Akismet
-  * WP-Total-Cache
+  * W3-Total-Cache
   * Yoast SEO
   * Events Made Easy (for concert dates, directions)
 
