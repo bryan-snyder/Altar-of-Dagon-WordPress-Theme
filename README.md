@@ -10,7 +10,7 @@ By the time I'm done building this, it will be a full start to finish WordPress 
 ##Plan of attack:
 To create a mobile first website for the band [**Altar of Dagon**](http://altarofdagon.com) I will be using the following technologies to create this theme:
   * [WordPress (obviously)](http://wordpress.org)
-  * [BootStrap 3.3.6 CDN](http://getbootstrap.com) (until a stable release of BS4 is available)
+  * [BootStrap 3.3.7 CDN](http://getbootstrap.com) (until a stable release of BS4 is available)
   * HTML5/CSS3
   * PHP/MySQL
   * Javascript/jQuery
