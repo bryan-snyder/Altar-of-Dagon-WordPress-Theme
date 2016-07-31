@@ -15,6 +15,7 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-content/plugins/Akismet/*
 wp-content/advanced-cache.php
 wp-content/backup-db/
 wp-content/backups/
