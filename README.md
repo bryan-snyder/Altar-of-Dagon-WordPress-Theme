@@ -15,4 +15,4 @@ At this point only Akismet is installed. I'm not going to track what plugin's I'
 If you're dying to know if I'm using any third party plug-in's... check my .gitignore file, you'll see me blocking them.
 
 ##Theme Customizer:
-I will be creating theme customizer options within this build. If you're looking to learn to create customizer "plug ins", I'll have some knowledge to share.
+I will be creating theme customizer functions or plugins within this build. If you're looking to learn to create customizer "plug ins", I'll have some knowledge to share.
