@@ -143,6 +143,7 @@ function band_login_logo() { ?>
         }
         .login form {
         	background: #222 !important;
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/diagmonds.png) !important;
           border: 2px solid #ccc;
           border-radius: 5px;
           box-shadow: 0px 0px 20px #3dff3d,
