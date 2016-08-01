@@ -27,6 +27,7 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/akismet/
 wp-content/themes/twentysixteen/*
+index.php
 /index.php
 /.htaccess
 /sitemap.xml
