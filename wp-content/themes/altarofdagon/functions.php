@@ -150,7 +150,7 @@ function band_login_logo() { ?>
         }
         .login form::before {
         	display: block;
-        	content: "Website Administration Area";
+        	content: "Website Admin Area";
         	margin-top: -20px;
         	padding-bottom: 20px;
         	font-size: 18px;
