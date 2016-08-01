@@ -120,10 +120,10 @@ function band_pagination($pages = '', $range = 2)
 function band_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
-            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png) !important;
-            background-size: 320px !important;
-            width: 320px !important;
-            height: 180px !important
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png) !important;
+          background-size: 320px !important;
+          width: 320px !important;
+          height: 180px !important
         }
         body {
         	background: #070707 !important;
