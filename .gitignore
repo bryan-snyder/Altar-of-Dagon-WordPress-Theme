@@ -1,5 +1,6 @@
 
 *.log
+.DS_Store
 wp-config.php
 wp-activate.php
 wp-admin/
@@ -26,9 +27,7 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/akismet/
 wp-content/themes/twentysixteen/*
-
-/.DS_Store
+/index.php
 /.htaccess
 /sitemap.xml
 /sitemap.xml.gz
-FILE_NAME
