@@ -75,7 +75,7 @@ add_action( 'customize_register', 'band_theme_customize_register', 20 );
 //begin blog page read more button
 function excerpt_read_more_link($output) {
 global $post;
-return $output . '<a style="margin-bottom: 20px;" class="" href="?p='. get_the_ID($post->ID) . '"><button class="btn  btn-default">Read More...</button></a>';
+return $output . '<a style="margin-bottom: 20px;" class="" href="?p='. get_the_ID($post->ID) . '"><button class="btn btn-default">Read More...</button></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button
@@ -120,7 +120,7 @@ function band_pagination($pages = '', $range = 2)
 function band_login_logo() { ?>
     <style type="text/css">
         .login h1 a {
-          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png) !important;
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png) !important; /*Artist Specific Image*/
           background-size: 320px !important;
           width: 320px !important;
           height: 180px !important
@@ -183,18 +183,15 @@ function band_login_logo_url() {
 add_filter( 'login_headerurl', 'band_login_logo_url' );
 
 function band_login_logo_url_title() {
-    return 'Altar of Dagon';
+    return 'Return to altarofdagon.com'; //Artist specific
 }
 add_filter( 'login_headertitle', 'band_login_logo_url_title' );
 
-//LOAD STYLES AND SCRIPTS ON LOGIN PAGE
-function band_enqueue_style() {
-	wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', false );
-}
+//LOAD SCRIPTS ON LOGIN PAGE
 function band_enqueue_script() {
 	wp_enqueue_script( 'retina-js' , get_template_directory_uri() . '/js/retina.min.js', false, null, true);
+  wp_enqueue_script( 'font-awesome-dashboard', '//use.fontawesome.com/27505604f5.js', false, null, true);
 }
-add_action( 'login_enqueue_scripts', 'band_enqueue_style', 10 );
 add_action( 'login_enqueue_scripts', 'band_enqueue_script', 1 );
 
 
@@ -216,7 +213,7 @@ function wp_admin_bar_my_custom_account_menu( $wp_admin_bar ) {
 
 if ( 0 != $user_id ) {
   $avatar = get_avatar( $user_id, 28 );
-  $howdy = sprintf( __('What it do %1$s?'), $current_user->display_name );
+  $howdy = sprintf( __('What it do %1$s?'), $current_user->display_name ); //Artist specific
   $class = empty( $avatar ) ? '' : 'with-avatar';
 
 $wp_admin_bar->add_menu( array(
@@ -229,6 +226,23 @@ $wp_admin_bar->add_menu( array(
 ),
 ));
 }}
+
+//Remove incoming wordpress.com feeds from dashboard
+// disable default dashboard widgets
+function disable_default_dashboard_widgets() {
+
+	//remove_meta_box('dashboard_right_now', 'dashboard', 'core');
+	remove_meta_box('dashboard_activity', 'dashboard', 'core');
+	remove_meta_box('dashboard_recent_comments', 'dashboard', 'core');
+	remove_meta_box('dashboard_incoming_links', 'dashboard', 'core');
+	remove_meta_box('dashboard_plugins', 'dashboard', 'core');
+
+	remove_meta_box('dashboard_quick_press', 'dashboard', 'core');
+	remove_meta_box('dashboard_recent_drafts', 'dashboard', 'core');
+	remove_meta_box('dashboard_primary', 'dashboard', 'core');
+	remove_meta_box('dashboard_secondary', 'dashboard', 'core');
+}
+add_action('admin_menu', 'disable_default_dashboard_widgets');
 
 //WP Helpers
 show_admin_bar(false);
