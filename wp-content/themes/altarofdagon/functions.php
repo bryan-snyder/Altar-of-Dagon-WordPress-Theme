@@ -136,10 +136,6 @@ function band_login_logo() { ?>
           background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/stressed_linen.png) !important;
           background-repeat: repeat
         }
-        @media (max-width:768px) {
-        body {
-          min-height: 110%
-        }}
         a:focus {
         	box-shadow: none;
         }
@@ -228,7 +224,7 @@ function wp_admin_bar_my_custom_account_menu( $wp_admin_bar ) {
 
 if ( 0 != $user_id ) {
   $avatar = get_avatar( $user_id, 28 );
-  $howdy = sprintf( __('What it do %1$s?'), $current_user->display_name ); //Artist specific
+  $howdy = sprintf( __('%1$s, welcome back bro!'), $current_user->display_name ); //Artist specific
   $class = empty( $avatar ) ? '' : 'with-avatar';
 
 $wp_admin_bar->add_menu( array(
