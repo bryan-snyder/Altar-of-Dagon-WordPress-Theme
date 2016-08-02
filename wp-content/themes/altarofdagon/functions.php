@@ -125,11 +125,21 @@ function band_login_logo() { ?>
           width: 320px !important;
           height: 180px !important
         }
+        @media (max-width: 768px) {
+        .login h1 a {
+          background-size: 300px !important;
+          width: 300px !important;
+          height: 160px !important
+        }}
         body {
         	background: #070707 !important;
           background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/stressed_linen.png) !important;
           background-repeat: repeat
         }
+        @media (max-width:768px) {
+        body {
+          min-height: 110%
+        }}
         a:focus {
         	box-shadow: none;
         }
@@ -149,6 +159,11 @@ function band_login_logo() { ?>
           box-shadow: 0px 0px 20px #3dff3d,
           inset 0px 0px 2px #3dff3d !important;
         }
+        @media (max-width: 768px) {
+        .login form {
+          width: 230px;
+          margin-left: 19px !important
+        }}
         .login form::before {
         	display: block;
         	content: "Website Admin Area";
