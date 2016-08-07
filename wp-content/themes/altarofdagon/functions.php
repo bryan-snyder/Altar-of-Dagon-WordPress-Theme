@@ -9,7 +9,7 @@ function band_async_scripts($url)
     else
 	return str_replace( '#asyncload', '', $url )."' async='async";
     }
-add_filter( 'clean_url', 'band_async_scripts', 11, 1 );
+add_filter( 'clean_url', 'band_async_scripts',11,1);
 
 //Load JS/CSS dependencies in header or footer
 function enqueue_band_scripts() {
@@ -41,13 +41,19 @@ function bootstrap_responsive_images( $html ){
   $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
   return $html;
 }
-add_filter( 'the_content','bootstrap_responsive_images',10 );
-add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images', 10 );
+add_filter( 'the_content','bootstrap_responsive_images',10);
+add_filter( 'post_thumbnail_html', 'bootstrap_responsive_images',10);
 //End Responsive Imagery
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
+register_nav_menus( array(
+	'primary' => __( 'Altar of Navigation', 'altarofdagon' ),
+));
 
 //Responsive URL Video Embeds. Any copied/pasted or other media URL will be automatically made responsive.
 //Currently set to 16:9 aspect ratio.
-add_filter( 'embed_oembed_html', 'custom_oembed_filter', 10, 4 ) ;
+add_filter( 'embed_oembed_html', 'custom_oembed_filter',10,4);
 
 function custom_oembed_filter($html, $url, $attr, $post_ID) {
     $return = '<div class="embed-responsive embed-responsive-16by9">'.$html.'</div><br />';
@@ -70,7 +76,7 @@ function band_theme_customize_register( $wp_customize ) {
  $wp_customize->remove_section('static_front_page');
  $wp_customize->remove_section('title_tagline');
 }
-add_action( 'customize_register', 'band_theme_customize_register', 20 );
+add_action( 'customize_register', 'band_theme_customize_register',20);
 
 //begin blog page read more button
 function excerpt_read_more_link($output) {
@@ -203,7 +209,7 @@ function band_enqueue_script() {
 	wp_enqueue_script( 'retina-js' , get_template_directory_uri() . '/js/retina.min.js', false, null, true);
   wp_enqueue_script( 'font-awesome-dashboard', '//use.fontawesome.com/27505604f5.js', false, null, true);
 }
-add_action( 'login_enqueue_scripts', 'band_enqueue_script', 1 );
+add_action( 'login_enqueue_scripts', 'band_enqueue_script',1);
 
 
 //ADMIN SECTION FAVICON ITEMS TO <head> SECTION
@@ -215,7 +221,7 @@ function bandFavicon() {
  add_action( 'admin_head', 'bandFavicon' );
 
 //Change annoying "Howdy..." greeting
-add_action( 'admin_bar_menu', 'wp_admin_bar_my_custom_account_menu', 11 );
+add_action( 'admin_bar_menu', 'wp_admin_bar_my_custom_account_menu',11);
 
 function wp_admin_bar_my_custom_account_menu( $wp_admin_bar ) {
   $user_id = get_current_user_id();
@@ -238,16 +244,13 @@ $wp_admin_bar->add_menu( array(
 ));
 }}
 
-//Remove incoming wordpress.com feeds from dashboard
 // disable default dashboard widgets
 function disable_default_dashboard_widgets() {
-
 	//remove_meta_box('dashboard_right_now', 'dashboard', 'core');
 	remove_meta_box('dashboard_activity', 'dashboard', 'core');
 	remove_meta_box('dashboard_recent_comments', 'dashboard', 'core');
 	remove_meta_box('dashboard_incoming_links', 'dashboard', 'core');
 	remove_meta_box('dashboard_plugins', 'dashboard', 'core');
-
 	remove_meta_box('dashboard_quick_press', 'dashboard', 'core');
 	remove_meta_box('dashboard_recent_drafts', 'dashboard', 'core');
 	remove_meta_box('dashboard_primary', 'dashboard', 'core');
