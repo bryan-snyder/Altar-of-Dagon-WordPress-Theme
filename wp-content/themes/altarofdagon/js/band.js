@@ -1,3 +1,3 @@
 jQuery(window).load(function() {
- jQuery("#preloader").delay(1500).fadeOut('slow');
+ jQuery("#preloader").delay(1300).fadeOut('slow');
 });

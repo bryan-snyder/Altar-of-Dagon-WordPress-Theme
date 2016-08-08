@@ -1,9 +1,19 @@
       <footer class="footer">
         <div class="container">
-          <p class="text-muted">Place sticky footer content here.</p>
+          <div class="col-md-4">
+            <p class="text-center text-muted">Content can go here.</p>
+          </div>
+          <div class="col-md-4">
+            <div id="footerLogo"></div>
+            <br />
+            <p class="text-center text-muted">Copyright &copy; <?php echo date('Y'); ?> Altar of Dagon</p>
+          </div>
+          <div class="col-md-4">
+            <p class="text-center text-muted">Content can go here.</p>
+          </div>
         </div>
       </footer>
-    <!-- RX -->
+      <!-- RX -->
     <?php wp_footer(); ?>
   </body>
 </html>

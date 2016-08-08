@@ -24,8 +24,8 @@
       <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/img/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <?php wp_head(); ?>
   </head>
@@ -48,12 +48,18 @@
                   'menu'              => 'primary',
           				'theme_location'    => 'primary',
           				'depth'             => 2,
-          				'container'         => '',
-          				'container_class'   => '',
+          				'container'         => 'div',
+          				'container_class'   => 'text-uppercase',
           				'menu_class'        => 'nav navbar-nav',
           				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
           				'walker'            => new wp_bootstrap_navwalker())
               );?>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a title="Altar of Dagon on FaceBook" href="https://www.facebook.com/altarofdagon/" target="_blank"><i class="fa fa-facebook-official fa-fw fa-2x" aria-hidden="true"></i></a></li>
+                <li><a title="Altar of Dagon on YouTube" href="#" target="_blank"><i class="fa fa-youtube-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
+                <li><a title="Altar of Dagon on Twitter" href="#" target="_blank"><i class="fa fa-twitter-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
+                <li><a title="Altar of Dagon on Instagram" href="#" target="_blank"><i class="fa fa-instagram fa-fw fa-2x" aria-hidden="true"></i></a></li>
+              </ul>
             </div><!--/.nav-collapse -->
           </div>
         </nav>

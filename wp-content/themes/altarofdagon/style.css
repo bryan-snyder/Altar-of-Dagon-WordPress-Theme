@@ -10,9 +10,10 @@ Text Domain: altarofdagon
 */
 
 /* ====== BOOTSTRAP MOBILE FIRST FRAMEWORK ====== */
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-/* Elements */
+/* ==================== Elements ==================== */
 html {
   position: relative;
   min-height: 100%;
@@ -21,8 +22,20 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 160px;
   background-image: url('img/stressed_linen.png');
+  font-size: 16px
 }
-/* ID's */
+/* ==================== ID's ==================== */
+/* Preload Animation */
+@keyframes move-background {
+from {
+  background-position: top;
+}
+50% {
+  background-position: center;
+}
+to {
+  background-position: top;
+}}
 #preloader {
   position: fixed;
   left: 0px;
@@ -30,16 +43,23 @@ body {
   width: 100%;
   height: 100%;
   z-index: 999999999999999999999999;
-  background: url("img/altar_of_dagon_trans_logo.png") 50% 50% no-repeat #222
+  background: url('img/altar_of_dagon_trans_logo.png') 50% 50% no-repeat #222;
+  background-size: 280px;
+  animation-name: move-background;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite
 }
-/* Classes */
+#footerLogo {
+  width: 100%;
+  height: 120px;
+  background: url('img/altar_of_dagon_trans_logo.png') no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+/* ==================== Classes ==================== */
 .altarLogo {
   margin-top: -7px
-}
-.navbar-inverse {
-  background-image: url('img/diagmonds.png');
-  height: 55px;
-  border-bottom: 3px solid #333 !important
 }
 .footer {
   position: absolute;
@@ -47,46 +67,68 @@ body {
   width: 100%;
   background-image: url('img/diagmonds.png');
   /* Set the fixed height of the footer here */
-  height: 160px;
+  min-height: 160px;
   background-color: #222;
-  border-top: 3px solid #333
+  border-top: 3px solid #333;
+  padding-top: 15px
+}
+/* Bootstrap Customization */
+.navbar-inverse {
+  background-image: url('img/diagmonds.png');
+  height: 55px;
+  border-bottom: 3px solid #333 !important
+}
+.navbar-fixed-top .navbar-collapse {
+  background: #333;
+  margin-top: 3px
+}
+.navbar-toggle {
+  background: #3dff3d !important;
+  border-radius: 0px !important;
+  border-color: #ccc !important
+}
+.navbar-right {
+  margin-top: -3px !important
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #333 !important
 }}
+/* ===================================================== */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-/* Elements */
+/* ==================== Elements ==================== */
 
-/* ID's */
+/* ==================== ID's ==================== */
 
-
-/* Classes */
+/* ==================== Classes ==================== */
 }
-
+/* ===================================================== */
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-/* Elements */
+/* ==================== Elements ==================== */
 
-/* ID's */
+/* ==================== ID's ==================== */
 
-
-/* Classes */
-}
-
+/* ==================== Classes ==================== */
+.navbar-fixed-top .navbar-collapse {
+  background: inherit;
+  margin-top: inherit
+}}
+/* ===================================================== */
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-/* Elements */
+/* ==================== Elements ==================== */
 
-/* ID's */
+/* ==================== ID's ==================== */
 
-
-/* Classes */
+/* ==================== Classes ==================== */
 }
-
+/* ===================================================== */
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-/* Elements */
+/* ==================== Elements ==================== */
 
-/* ID's */
+/* ==================== ID's ==================== */
 
-
-/* Classes */
+/* ==================== Classes ==================== */
 }
