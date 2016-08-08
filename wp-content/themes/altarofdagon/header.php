@@ -30,30 +30,31 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <header>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png" alt="Altar of Dagon" width="70" class="altarLogo"></a>
+    <div id="preloader"></div>
+      <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png" alt="Altar of Dagon" width="70" class="altarLogo"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <?php wp_nav_menu( array(
+                  'menu'              => 'primary',
+          				'theme_location'    => 'primary',
+          				'depth'             => 2,
+          				'container'         => '',
+          				'container_class'   => '',
+          				'menu_class'        => 'nav navbar-nav',
+          				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+          				'walker'            => new wp_bootstrap_navwalker())
+              );?>
+            </div><!--/.nav-collapse -->
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <?php wp_nav_menu( array(
-                'menu'              => 'primary',
-        				'theme_location'    => 'primary',
-        				'depth'             => 2,
-        				'container'         => '',
-        				'container_class'   => '',
-        				'menu_class'        => 'nav navbar-nav',
-        				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-        				'walker'            => new wp_bootstrap_navwalker())
-            );?>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>

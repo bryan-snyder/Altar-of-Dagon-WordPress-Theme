@@ -9,9 +9,84 @@ Tags: Altar of Dagon, custom, custom WordPress theme, bootstrap WordPress theme,
 Text Domain: altarofdagon
 */
 
-
+/* ====== BOOTSTRAP MOBILE FIRST FRAMEWORK ====== */
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+/* Elements */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 160px;
+  background-image: url('img/stressed_linen.png');
+}
+/* ID's */
+#preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999999999999999999;
+  background: url("img/altar_of_dagon_trans_logo.png") 50% 50% no-repeat #222
+}
+/* Classes */
 .altarLogo {
   margin-top: -7px
 }
+.navbar-inverse {
+  background-image: url('img/diagmonds.png');
+  height: 55px;
+  border-bottom: 3px solid #333 !important
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url('img/diagmonds.png');
+  /* Set the fixed height of the footer here */
+  height: 160px;
+  background-color: #222;
+  border-top: 3px solid #333
+}}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+/* Elements */
 
-/* Bootstrap Customization */
+/* ID's */
+
+
+/* Classes */
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+/* Elements */
+
+/* ID's */
+
+
+/* Classes */
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+/* Elements */
+
+/* ID's */
+
+
+/* Classes */
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+/* Elements */
+
+/* ID's */
+
+
+/* Classes */
+}
