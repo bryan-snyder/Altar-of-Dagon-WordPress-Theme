@@ -1,4 +1,4 @@
-# Altar-of-Dagon-WordPress-Theme
+# Altar of Dagon WordPress Theme
 I am creating this WordPress theme for the band I'm currently playing in **Altar of Dagon**. Not going to be much public interest here but I hope to grow it into a larger, more customizable theme that can be distributed.
 
 This WordPress theme will eventually reside here: [altarofdagon.com](http://altarofdagon.com)
