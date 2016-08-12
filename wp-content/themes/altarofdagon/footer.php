@@ -1,7 +1,7 @@
       <footer class="footer">
         <div class="container">
           <div class="col-md-4">
-            <p class="text-center text-muted">Content can go here.</p>
+            <p class="text-center text-muted">Event calendar here.</p>
           </div>
           <div class="col-md-4">
             <div id="footerLogo"></div>

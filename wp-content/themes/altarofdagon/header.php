@@ -63,4 +63,15 @@
             </div><!--/.nav-collapse -->
           </div>
         </nav>
-      </header>
+      <div class="alert alert-of-dagon text-center alert-dismissible fade in" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </button>
+        <p><strong><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i> Next Event: (This will be programmed in). Click the "x" to the right to close this message.</strong></p>
+      </div>
+      <section id="intro" data-speed="6" data-type="background">
+        <div class="container">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/aod_logo_large.png" class="img-responsive center-block" width="500" />
+        </div>
+      </section>
+    </header>

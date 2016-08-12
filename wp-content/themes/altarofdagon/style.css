@@ -20,9 +20,10 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 160px;
+  padding-bottom: 160px;
   background-image: url('img/stressed_linen.png');
-  font-size: 16px
+  font-size: 16px !important;
+  padding-top: 55px
 }
 /* ==================== ID's ==================== */
 /* Preload Animation */
@@ -50,12 +51,54 @@ to {
   animation-duration: 2s;
   animation-iteration-count: infinite
 }
+#intro {
+  background: url('img/top-bg.png') 50% 0 fixed;
+  min-height: 300px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 100px 0;
+}
+#home {
+  background: url('img/space-parallax-bg.png') 50% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 200px 0;
+}
+#about {
+  background: url('img/stressed_linen.png') 50% 0 fixed;
+  min-height: 600px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 100px 0;
+  color: #fff;
+}
+#preFooter {
+  background: url('img/space-parallax-bg02.png') 50% 0 fixed;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 200px 0;
+}
 #footerLogo {
   width: 100%;
   height: 120px;
   background: url('img/altar_of_dagon_trans_logo.png') no-repeat;
   background-size: contain;
-  background-position: center center;
+  background-position: bottom center
+}
+#bandPic {
+  width: 100%;
+  height: auto;
+  margin-top: -100px
 }
 /* ==================== Classes ==================== */
 .altarLogo {
@@ -72,6 +115,17 @@ to {
   border-top: 3px solid #333;
   padding-top: 15px
 }
+.alert-of-dagon {
+  background: #3dff3d;
+  border-radius: 0px !important;
+  margin-bottom: 0px !important
+}
+.aod-well {
+  color: #fff;
+  background-color:rgba(0, 0, 0, 0.7) !important;
+  border-color: transparent !important;
+  box-shadow: 2px -1px 70px #3dff3d !important
+}
 /* Bootstrap Customization */
 .navbar-inverse {
   background-image: url('img/diagmonds.png');
@@ -82,10 +136,16 @@ to {
   background: #333;
   margin-top: 3px
 }
+.well {
+  border-radius: 0px !important
+}
 .navbar-toggle {
   background: #3dff3d !important;
   border-radius: 0px !important;
   border-color: #ccc !important
+}
+.navbar-nav>li>a {
+  font-size: 14px
 }
 .navbar-right {
   margin-top: -3px !important
