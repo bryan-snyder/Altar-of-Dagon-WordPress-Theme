@@ -168,7 +168,10 @@ to {
 /* ==================== Elements ==================== */
 
 /* ==================== ID's ==================== */
-
+#altarOfNavigation.nav>li>a {
+  padding-right: 5px !important;
+  padding-left: 5px !important
+}
 /* ==================== Classes ==================== */
 .navbar-fixed-top .navbar-collapse {
   background: inherit;
