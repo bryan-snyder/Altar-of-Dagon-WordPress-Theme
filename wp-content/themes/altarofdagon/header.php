@@ -30,7 +30,6 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <div id="preloader"></div>
       <header>
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
@@ -41,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png" alt="Altar of Dagon" width="70" class="altarLogo"></a>
+              <a class="navbar-brand" href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png" alt="Altar of Dagon" width="70" class="altarLogo"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <?php wp_nav_menu( array(
@@ -70,7 +69,7 @@
         </button>
         <p><strong><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i> Next Event: (This will be programmed in). Click the "x" to the right to close this message.</strong></p>
       </div>
-      <section id="intro" data-speed="6" data-type="background">
+      <section id="introOfDagon" data-speed="6" data-type="background">
         <div class="container">
           <img src="<?php echo get_template_directory_uri(); ?>/img/aod_logo_large.png" class="img-responsive center-block" width="500" />
         </div>

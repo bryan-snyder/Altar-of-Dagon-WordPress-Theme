@@ -4,7 +4,7 @@ Theme URI: https://github.com/bkaminski/Altar-of-Dagon-WordPress-Theme
 Author: Ben Kaminski
 Author URI: http://benkaminski.com/
 Description: The Altar of Dagon WordPress theme was created exclusively for the band Altar of Dagon (Newark, DE), the theme includes custom programming, theme customizer functions, and is 100% mobile responsive.
-Version: 1.0.0
+Version: 1.0.1
 Tags: Altar of Dagon, custom, custom WordPress theme, bootstrap WordPress theme, heavy metal, heavy metal WordPress theme, Delaware, local, metal, doom metal
 Text Domain: altarofdagon
 */
@@ -29,15 +29,15 @@ body {
 /* Preload Animation */
 @keyframes move-background {
 from {
-  background-position: top;
+  background-position: top
 }
 50% {
-  background-position: center;
+  background-position: center
 }
 to {
-  background-position: top;
+  background-position: top
 }}
-#preloader {
+#altarOfLoading {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -51,7 +51,7 @@ to {
   animation-duration: 2s;
   animation-iteration-count: infinite
 }
-#intro {
+#introOfDagon {
   background: url('img/top-bg.png') 50% 0 fixed;
   min-height: 300px;
   margin: 0 auto;
@@ -60,7 +60,7 @@ to {
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 100px 0;
 }
-#home {
+#homeOfDagon {
   background: url('img/space-parallax-bg.png') 50% 0 fixed;
   height: auto;
   margin: 0 auto;
@@ -69,7 +69,7 @@ to {
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 200px 0;
 }
-#about {
+#buyTheGodDamnedAlbum {
   background: url('img/stressed_linen.png') 50% 0 fixed;
   min-height: 600px;
   margin: 0 auto;
@@ -79,7 +79,7 @@ to {
   padding: 100px 0;
   color: #fff;
 }
-#preFooter {
+#preFooterOfDagon {
   background: url('img/space-parallax-bg02.png') 50% 0 fixed;
   height: auto;
   margin: 0 auto;
@@ -95,7 +95,7 @@ to {
   background-size: contain;
   background-position: bottom center
 }
-#bandPic {
+#altarOfbandPics {
   width: 100%;
   height: auto;
   margin-top: -100px
@@ -103,6 +103,9 @@ to {
 /* ==================== Classes ==================== */
 .altarLogo {
   margin-top: -7px
+}
+.altarGreen {
+  color: #3dff3d
 }
 .footer {
   position: absolute;
