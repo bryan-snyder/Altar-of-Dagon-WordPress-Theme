@@ -51,7 +51,7 @@ to {
   animation-duration: 2s;
   animation-iteration-count: infinite
 }
-#introOfDagon {
+#headerOfDagon {
   background: url('img/top-bg.png') 50% 0 fixed;
   min-height: 300px;
   margin: 0 auto;
@@ -101,6 +101,18 @@ to {
   margin-top: -100px
 }
 /* ==================== Classes ==================== */
+.home .band-logo {
+  width: 500px !important;
+  margin-top: 0px !important
+}
+.page .band-logo,
+.error404 .band-logo {
+  width: 300px;
+  margin-top: -30px
+}
+.home #headerOfDagon {
+  height: 500px !important
+}
 .altarLogo {
   margin-top: -7px
 }

@@ -48,28 +48,29 @@
       <div class="col-md-12 well aod-well">
         <h1 class="altarGreen text-center"><u>Latest News</u>:</h1>
         <br />
-        <div class="col-md-2">
-          <br />
-          <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
-        </div>
-        <div class="col-md-10">
-          <h2>Example Headline 1</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-            <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
+          <div class="col-md-2">
+            <br />
+            <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
+          </div>
+          <div class="col-md-10">
+            <h2>Example Headline 1</h2>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
+              <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
+            <hr>
+          </div>
+          <div class="col-md-2">
+            <br />
+            <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
+            <span class="hidden-xs hidden-sm"><br /><br /><br /></span>
+          </div>
+          <div class="col-md-10">
+            <h2>Example Headline 2</h2>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
+              <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
+          </div>
+          <div class="clearfix"></div>
           <hr>
-        </div>
-        <div class="col-md-2">
-          <br />
-          <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
-          <br />
-          <br />
-          <br />
-        </div>
-        <div class="col-md-10">
-          <h2>Example Headline 2</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-            <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
-        </div>
+          <a class="btn btn-success btn-lg btn-block" href="#">More News <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
       </div>
     </div>
   </section>

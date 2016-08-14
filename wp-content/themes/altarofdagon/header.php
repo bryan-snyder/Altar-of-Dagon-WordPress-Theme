@@ -69,9 +69,9 @@
         </button>
         <p><strong><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i> Next Event: (This will be programmed in). Click the "x" to the right to close this message.</strong></p>
       </div>
-      <section id="introOfDagon" data-speed="6" data-type="background">
+      <section id="headerOfDagon" data-speed="6" data-type="background">
         <div class="container">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/aod_logo_large.png" class="img-responsive center-block" width="500" />
+          <img src="<?php echo get_template_directory_uri(); ?>/img/aod_logo_large.png" class="band-logo img-responsive center-block" alt="Altar of Dagon" />
         </div>
       </section>
     </header>
