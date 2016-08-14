@@ -142,6 +142,9 @@ to {
 .well {
   border-radius: 0px !important
 }
+.btn {
+  border-radius: 0px !important
+}
 .navbar-toggle {
   background: #3dff3d !important;
   border-radius: 0px !important;

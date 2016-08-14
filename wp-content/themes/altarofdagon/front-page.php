@@ -43,7 +43,7 @@
         </div>
       </div>
   </section>
-  <section id="preFooterOfDagon" data-speed="4" data-type="background">
+  <section id="preFooterOfDagon" data-speed="8" data-type="background">
     <div class="container">
       <div class="col-md-12 well aod-well">
         <h1 class="altarGreen text-center"><u>Latest News</u>:</h1>
@@ -61,6 +61,9 @@
         <div class="col-md-2">
           <br />
           <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
+          <br />
+          <br />
+          <br />
         </div>
         <div class="col-md-10">
           <h2>Example Headline 2</h2>

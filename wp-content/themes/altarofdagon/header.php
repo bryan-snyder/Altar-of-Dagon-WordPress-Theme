@@ -52,15 +52,15 @@
           				'menu_class'        => 'nav navbar-nav',
           				'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
           				'walker'            => new wp_bootstrap_navwalker())
-              );?>
+              ); ?>
               <ul id="altarOfNavigation" class="nav navbar-nav navbar-right">
                 <li><a title="Altar of Dagon on FaceBook" href="https://www.facebook.com/altarofdagon/" target="_blank"><i class="fa fa-facebook-official fa-fw fa-2x" aria-hidden="true"></i></a></li>
-                <li><a title="Altar of Dagon on YouTube" href="https://www.youtube.com/channel/UCKq2lfjviGWDq6VAk_gsU_A" target="_blank"><i class="fa fa-youtube-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
+                <li><a title="Altar of Dagon on YouTube" href="https://www.youtube.com/user/AltarofDagonmusic" target="_blank"><i class="fa fa-youtube-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
                 <li><a title="Altar of Dagon on Twitter" href="https://twitter.com/AltarofDagon" target="_blank"><i class="fa fa-twitter-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
                 <li><a title="Altar of Dagon on Instagram" href="https://www.instagram.com/altar_of_dagon/" target="_blank"><i class="fa fa-instagram fa-fw fa-2x" aria-hidden="true"></i></a></li>
-                <li><a title="Altar of Dagon on Instagram" href="https://plus.google.com/u/0/107650889883554005981/about" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
+                <li><a title="Altar of Dagon on Google Plus" href="https://plus.google.com/u/0/107650889883554005981/about" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
               </ul>
-            </div><!--/.nav-collapse -->
+            </div>
           </div>
         </nav>
       <div class="alert alert-of-dagon text-center alert-dismissible fade in" role="alert">
