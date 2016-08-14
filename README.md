@@ -29,6 +29,7 @@ Here's what I plan to use:
   * W3-Total-Cache
   * Yoast SEO
   * Events Made Easy (for concert dates, directions)
+  * WooCommerce to handle merchandise sales
 
 ##Theme Customizer:
 I will be creating theme customizer functions or plugins within this build. If you're looking to learn to create customizer "plug ins", I'll have some knowledge to share.
