@@ -69,7 +69,8 @@ to {
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   padding: 200px 0;
 }
-#buyTheGodDamnedAlbum {
+#buyTheGodDamnedAlbum,
+#readTheFuckingContent {
   background: url('img/stressed_linen.png') 50% 0 fixed;
   min-height: 600px;
   margin: 0 auto;
@@ -106,7 +107,8 @@ to {
   margin-top: 0px !important
 }
 .page .band-logo,
-.error404 .band-logo {
+.error404 .band-logo,
+.single .band-logo {
   width: 300px;
   margin-top: -30px
 }

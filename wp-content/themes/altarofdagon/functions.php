@@ -59,6 +59,19 @@ function custom_oembed_filter($html, $url, $attr, $post_ID) {
     $return = '<div class="embed-responsive embed-responsive-16by9">'.$html.'</div><br />';
     return $return;
 }
+// add tag support to pages
+function tags_support_all() {
+	register_taxonomy_for_object_type('post_tag', 'page');
+}
+
+// ensure all tags are included in queries
+function tags_support_query($wp_query) {
+	if ($wp_query->get('tag')) $wp_query->set('post_type', 'any');
+}
+
+// tag hooks
+add_action('init', 'tags_support_all');
+add_action('pre_get_posts', 'tags_support_query');
 
 function band_theme_customize_register( $wp_customize ) {
  //=============================================================
@@ -260,3 +273,4 @@ add_action('admin_menu', 'disable_default_dashboard_widgets');
 
 //WP Helpers
 show_admin_bar(false);
+add_theme_support( 'post-thumbnails' );

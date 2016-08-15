@@ -7,8 +7,8 @@
       </div>
       <div class="col-md-12 well aod-well">
         <h1>Altar of Dagon <small>Newark, Delaware</small></h1>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-          <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
+          <p>When you listen to Altar of Dagon: Be prepared for a voyage to places that exist only in your darkest nightmares and fantasy realms. Heavy guitar riffs, thunderous bass and drums and eerie, clean vocals, primal screams, and backing abyssal gutturals give you an idea of what Altar of Dagon is all about!</p>
+          <p><a class="btn btn-success" href="<?php echo get_site_url(); ?>/biography/">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
       </div>
     </div>
   </section>
@@ -46,31 +46,25 @@
   <section id="preFooterOfDagon" data-speed="8" data-type="background">
     <div class="container">
       <div class="col-md-12 well aod-well">
-        <h1 class="altarGreen text-center"><u>Latest News</u>:</h1>
+        <h1 class="altarGreen"><u>Latest News</u>:</h1>
         <br />
-          <div class="col-md-2">
-            <br />
-            <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
-          </div>
-          <div class="col-md-10">
-            <h2>Example Headline 1</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-              <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
-            <hr>
-          </div>
-          <div class="col-md-2">
-            <br />
-            <img src="http://placehold.it/150x150" alt="Placeholder Image" class="img-thumbnail" />
-            <span class="hidden-xs hidden-sm"><br /><br /><br /></span>
-          </div>
-          <div class="col-md-10">
-            <h2>Example Headline 2</h2>
-              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.</p>
-              <p><a class="btn btn-success" href="#">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
-          </div>
+          <?php $my_query = new WP_Query( 'category=altar-of-dagon&posts_per_page=2' );
+            while ( $my_query->have_posts() ) : $my_query->the_post();
+              $do_not_duplicate[] = $post->ID; ?>
+                <div class="col-md-2">
+                  <br />
+                    <a href='<?php the_permalink() ?>' rel='bookmark' title='<?php the_title(); ?>'><?php the_post_thumbnail( 'full', array( 'class' => 'center-block img-thumbnail' ) ); ?></a>
+                    <p class="text-center"><small class="muted"><time><?php the_time('m/d/Y') ?></time></small><br /><small>by: <?php echo get_the_author(); ?></small><br /></p>
+                </div>
+                <div class="col-md-10">
+                  <h2><a style='color:#fff;' href='<?php the_permalink() ?>' rel='bookmark' title='<?php the_title(); ?>'><?php the_title(); ?></a></h2>
+                    <p><?php the_excerpt(); ?></p>
+                  <hr>
+                </div>
+            <?php endwhile; ?>
           <div class="clearfix"></div>
-          <hr>
-          <a class="btn btn-success btn-lg btn-block" href="#">More News <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
+        <a class="btn btn-success btn-lg btn-block text-uppercase" href="#">News Archive <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
+        <br />
       </div>
     </div>
   </section>
