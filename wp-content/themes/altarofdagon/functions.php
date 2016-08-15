@@ -94,7 +94,7 @@ add_action( 'customize_register', 'band_theme_customize_register',20);
 //begin blog page read more button
 function excerpt_read_more_link($output) {
 global $post;
-return $output . '<a style="margin-bottom: 20px;" class="" href="?p='. get_the_ID($post->ID) . '"><button class="btn btn-default">Read More...</button></a>';
+return $output . '<a class="btn btn-default" href="?p='. get_the_ID($post->ID) . '">Read more <i class="fa fa-angle-double-right fa-fw" aria-hidden="true"></i></a>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 //end blog page read more button

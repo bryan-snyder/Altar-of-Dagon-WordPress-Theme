@@ -108,7 +108,9 @@ to {
 }
 .page .band-logo,
 .error404 .band-logo,
-.single .band-logo {
+.single .band-logo,
+.blog .band-logo,
+.archive .band-logo {
   width: 300px;
   margin-top: -30px
 }

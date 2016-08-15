@@ -18,30 +18,51 @@
         <h1>Buy the Album: <small><span class="altarGreen">"Nacht Der Untoten"</span> is available now!</small></h1>
       </div>
       <div class="row">
-            <div class="col-md-4">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/nacht-der-untoten-cover.png" alt="Altar of Dagon - Nacht Der Untoten" class="img-responsive center-block" />
-            </div>
-            <div class="col-md-4">
-              <h2>Track List <br /><small class="text-muted">Released: 07/04/2016</small></h2>
-              <ol>
-                <li>Nacht Der Untoten <small class="text-muted">[5:55]</small></li>
-                <li>Tag Danach <small class="text-muted">[4:14]</small></li>
-                <li>Dealbreaker <small class="text-muted">[4:01]</small></li>
-                <li>Dagonian Death Rider <small class="text-muted">[4:00]</small></li>
-                <li>Cthulhu Calling <small class="text-muted">[3:15]</small></li>
-                <li>Space Metal Juggernaut <small class="text-muted">[7:15]</small></li>
-                <li>Seer of Six <small class="text-muted">[8:40]</small></li>
-                <li>Ahnruk Skullsplitter <small class="text-muted">[5:57]</small></li>
-                <li>Darsha and Molivan <small class="text-muted">[5:50]</small></li>
-                <li>The Runner <small class="text-muted">[4:35]</small></li>
-              </ol>
-            </div>
-            <span class="visible-xs"><br /></span>
-            <div class="col-md-4">
-              <iframe src="//tools.applemusic.com/embed/v1/album/1131912268?country=us" height="425" width="100%"></iframe>
-            </div>
+        <div class="col-md-4">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/nacht-der-untoten-cover.png" alt="Altar of Dagon - Nacht Der Untoten" class="img-responsive center-block" />
+        </div>
+        <div class="col-md-4">
+          <h2>Track List <br /><small class="text-muted">Released: 07/04/2016</small></h2>
+            <ol>
+              <li>Nacht Der Untoten <small class="text-muted">[5:55]</small></li>
+              <li>Tag Danach <small class="text-muted">[4:14]</small></li>
+              <li>Dealbreaker <small class="text-muted">[4:01]</small></li>
+              <li>Dagonian Death Rider <small class="text-muted">[4:00]</small></li>
+              <li>Cthulhu Calling <small class="text-muted">[3:15]</small></li>
+              <li>Space Metal Juggernaut <small class="text-muted">[7:15]</small></li>
+              <li>Seer of Six <small class="text-muted">[8:40]</small></li>
+              <li>Ahnruk Skullsplitter <small class="text-muted">[5:57]</small></li>
+              <li>Darsha and Molivan <small class="text-muted">[5:50]</small></li>
+              <li>The Runner <small class="text-muted">[4:35]</small></li>
+            </ol>
+        </div>
+          <span class="visible-xs"><br /></span>
+        <div class="col-md-4">
+          <iframe src="//tools.applemusic.com/embed/v1/album/1131912268?country=us" height="425" width="100%"></iframe>
         </div>
       </div>
+      <br />
+      <br />
+      <p class="text-center">Buy now from these online stores:</p>
+      <br />
+      <div class="row">
+        <div class="col-md-3">
+          <a class="btn btn-success btn-lg btn-block" target="_blank" href="https://itunes.apple.com/us/album/nacht-der-untoten/id1131912268?app=music&ign-mpt=uo%3D4"><i class="fa fa-apple fa-fw fa-lg" aria-hidden="true"></i> iTunes Store</a>
+        </div>
+        <span class="visible-xs visible-sm"><br /></span>
+        <div class="col-md-3">
+          <a class="btn btn-success btn-lg btn-block" target="_blank" href="https://www.amazon.com/Nacht-Untoten.../dp/B01I2DRYR8"><i class="fa fa-amazon fa-fw fa-lg" aria-hidden="true"></i> Amazon</a>
+        </div>
+        <span class="visible-xs visible-sm"><br /></span>
+        <div class="col-md-3">
+          <a class="btn btn-success btn-lg btn-block" target="_blank" href="https://play.google.com/store/music/album/Altar_of_Dagon_Nacht_Der_Untoten?id=Bitxr3qw5uhm47mdxwgbg7uvwpi"><i class="fa fa-google fa-fw fa-lg" aria-hidden="true"></i> Google Play</a>
+        </div>
+        <span class="visible-xs visible-sm"><br /></span>
+        <div class="col-md-3">
+          <a class="btn btn-success btn-lg btn-block" target="_blank" href="https://altarofdagon.bandcamp.com/album/nacht-der-untoten"><img style="margin-top:-5px;" src="<?php echo get_template_directory_uri(); ?>/img/bandcamp.png" alt="BandCamp" width="60" />&nbsp;&nbsp;BandCamp</a>
+        </div>
+      </div>
+    </div>
   </section>
   <section id="preFooterOfDagon" data-speed="8" data-type="background">
     <div class="container">
@@ -63,7 +84,8 @@
                 </div>
             <?php endwhile; ?>
           <div class="clearfix"></div>
-        <a class="btn btn-success btn-lg btn-block text-uppercase" href="#">News Archive <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
+          <br />
+        <a class="btn btn-success btn-lg btn-block" href="<?php echo get_site_url(); ?>/news/">News Archive <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
         <br />
       </div>
     </div>
