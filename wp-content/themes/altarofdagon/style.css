@@ -161,6 +161,9 @@ to {
 .btn {
   border-radius: 0px !important
 }
+.input-lg {
+  border-radius: 0px !important
+}
 .navbar-toggle {
   background: #3dff3d !important;
   border-radius: 0px !important;
