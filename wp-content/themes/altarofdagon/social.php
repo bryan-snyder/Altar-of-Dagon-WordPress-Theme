@@ -42,11 +42,6 @@ get_header(); ?>
                 <iframe src="//lightwidget.com/widgets/424f98e34430a3a720abc03882b73c051938795c.html" id="lightwidget_424f98e344" name="lightwidget_424f98e344" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
               </div>
             </div>
-            <div class="col-md-12">
-              <h2 class="altarGreen"><i class="fa fa-google-plus-square fa-fw" aria-hidden="true"></i> Google +</h2>
-                <div id="gpluswidget" data-id="107650889883554005981" data-key="AIzaSyB1xbEy-3liDrf8M4_w-lury_29HCnSWOI" data-posts="5" data-lang="yes" data-width="500" data-bkg="transparent" data-padding="10" data-border="222222" data-radius="0" data-txt="ffffff" data-link="36c" data-favicon="yes" data-header="yes" data-footer="yes" data-page="no"></div>
-                <script type="text/javascript" src="http://gplusapi.googlecode.com/files/widget0.js"></script>
-            </div>
         </div>
   </div>
 </section>
