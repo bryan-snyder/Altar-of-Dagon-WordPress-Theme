@@ -27,6 +27,16 @@ function enqueue_band_styles() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_band_styles');
 
+//Custom Widget Areas
+register_sidebar(array(
+  'name' => __( 'Top Event Bar Widget Area' , 'altarofdagon' ),
+  'id' => 'event_bar_top',
+  'description' => __( 'Info for next event that shows up at the top of every page - Text Widget Area Only' , 'altarofdagon' ),
+  'before_widget' => '',
+  'after_widget'  => '',
+  'before_title' => '',
+  'after_title' => ''
+));
 //Add Bootstrap Responsive Image class to any uploaded image via dashboard.
 function bootstrap_responsive_images( $html ){
   $classes = 'img-responsive'; // separated by spaces, e.g. 'img image-link'

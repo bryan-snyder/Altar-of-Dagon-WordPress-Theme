@@ -145,6 +145,9 @@ to {
   border-color: transparent !important;
   box-shadow: 2px -1px 70px #3dff3d !important
 }
+.eme-location-balloon {
+  color: #222 !important
+}
 /* Bootstrap Customization */
 .navbar-inverse {
   background-image: url('img/diagmonds.png');

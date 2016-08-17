@@ -44,5 +44,7 @@ get_header(); ?>
             </div>
         </div>
   </div>
+  <br /><br />
+  <br /><br />
 </section>
 <?php get_footer(); ?>

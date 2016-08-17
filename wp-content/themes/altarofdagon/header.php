@@ -68,7 +68,7 @@
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
         </button>
-        <p><strong><i class="fa fa-calendar fa-fw fa-lg" aria-hidden="true"></i> Next Event: (This will be programmed in). Click the "x" to the right to close this message.</strong></p>
+        <?php dynamic_sidebar( 'event_bar_top' ); ?>
       </div>
       <section id="headerOfDagon" data-speed="6" data-type="background">
         <div class="container">
