@@ -2,7 +2,7 @@
 jQuery(document).ready(function($) {
 // Preloader
 $(window).load(function() {
- $("#altarOfLoading").delay(1300).fadeOut('slow');
+ $("#altarOfLoading").fadeOut('slow');
 });
 
 //Parallax

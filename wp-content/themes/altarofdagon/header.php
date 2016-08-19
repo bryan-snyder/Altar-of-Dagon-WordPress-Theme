@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php wp_title('&raquo;','true','right'); ?><?php bloginfo('name'); ?>&nbsp;&raquo;&nbsp;<?php bloginfo('description'); ?></title>
+    <title><?php wp_title(); ?><?php bloginfo('description'); ?></title>
       <!-- favicon and branding icons -->
       <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-60x60.png">
