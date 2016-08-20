@@ -284,3 +284,10 @@ add_action('admin_menu', 'disable_default_dashboard_widgets');
 //WP Helpers
 show_admin_bar(false);
 add_theme_support( 'post-thumbnails' );
+
+//add SVG Support
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
