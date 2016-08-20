@@ -158,14 +158,16 @@ to {
   background: #333;
   margin-top: 3px
 }
-.well {
+.well,
+.btn,
+.panel,
+.label,
+.input-lg,
+.form-control {
   border-radius: 0px !important
 }
-.btn {
-  border-radius: 0px !important
-}
-.input-lg {
-  border-radius: 0px !important
+.panel-body {
+  color: #222 !important
 }
 .navbar-toggle {
   background: #3dff3d !important;

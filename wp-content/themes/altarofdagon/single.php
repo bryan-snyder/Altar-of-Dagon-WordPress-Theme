@@ -1,21 +1,4 @@
 <?php get_header(); ?>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1670702136590284',
-      xfbml      : true,
-      version    : 'v2.7'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
 <section id="readTheFuckingContent" data-speed="5" data-type="background">
   <div class="container">
     <br /><br /><br />
@@ -40,8 +23,8 @@
             <hr>
           <?php endwhile; else: ?>
             <p><?php _e('Sorry, this page does not exist.' , 'altarofdagon' ); ?></p>
-        <?php endif; ?>
-        <?php comments_template('comments.php'); ?>
+          <?php endif; ?>
+          <?php comments_template(); ?>
         </div>
   </div>
 <br /><br />

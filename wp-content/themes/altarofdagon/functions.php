@@ -285,9 +285,128 @@ add_action('admin_menu', 'disable_default_dashboard_widgets');
 show_admin_bar(false);
 add_theme_support( 'post-thumbnails' );
 
-//add SVG Support
-function cc_mime_types($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
+
+/**
+ * Display template for comments and pingbacks.
+ *
+ */
+if (!function_exists('altarofdagon_comment')) :
+    function altarofdagon_comment($comment, $args, $depth)
+    {
+        $GLOBALS['comment'] = $comment;
+        switch ($comment->comment_type) :
+            case 'pingback' :
+            case 'trackback' : ?>
+
+                <span id="comment-<?php comment_ID(); ?>">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h4 class="text-center"><?php _e('<i class="fa fa-share-alt-square fa-fw fa-lg"></i>&nbsp;Pingback:', 'altarofdagon'); ?></h4>
+                        </div>
+                        <div class="panel-body">
+                            <p><?php comment_author_link(); ?><p>
+                        </div>
+                    </div>
+                <?php
+                break;
+            default :
+                // Proceed with normal comments.
+                global $post; ?>
+                <p id="li-comment-<?php comment_ID(); ?>">
+                    <div itemprop="comment">
+                        <div class="panel panel-success">
+                        	<div class="panel-heading">
+                        		<?php echo get_avatar($comment, 64); ?>
+                        		<h4><?php
+                                printf('<p class="text-uppercase">%1$s %2$s</p>',
+                                    get_comment_author_link(),
+                                    // If current post author is also comment author, make it known visually.
+                                    ($comment->user_id === $post->post_author) ? '<br /><span class="label label-danger"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></i> ' . __(
+                                        'Post author',
+                                        'altarofdagon'
+                                    ) . '</span> ' : ''); ?>
+                            	</h4>
+                        	</div>
+                            <div class="panel-body">
+                            <p><small>
+                                	<?php printf('<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+                                           	 	esc_url(get_comment_link($comment->comment_ID)),
+                                            	get_comment_time('c'),
+                                            	sprintf(
+                                                	__('%1$s at %2$s', 'altarofdagon'),
+                                                	get_comment_date(),
+                                                	get_comment_time()
+                                            	)
+                                    ); ?>
+                            </small></p>
+                            <?php if ('0' == $comment->comment_approved) : ?>
+                                <p class="alert alert-danger"><?php _e(
+                                    'Your comment is awaiting moderation.',
+                                    'altarofdagon'
+                                ); ?></p>
+                            <?php endif; ?>
+                            <?php comment_text(); ?>
+                            <p>
+                                <?php comment_reply_link( array_merge($args, array(
+                                            'reply_text' => __('<button class="btn btn-primary btn-sm"><i class="fa fa-comments-o fa-lg" aria-hidden="true"></i>&nbsp;Reply</button>', 'altarofdagon'),
+                                            'depth'      => $depth,
+                                            'max_depth'  => $args['max_depth']
+                                        )
+                                    )); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <?php
+                break;
+        endswitch;
+    }
+endif;
+
+//begin url link for comments override
+add_filter('comment_form_default_fields', 'url_filtered');
+function url_filtered($fields)
+{
+if(isset($fields['url']))
+unset($fields['url']);
+return $fields;
 }
-add_filter('upload_mimes', 'cc_mime_types');
+//end url link comment override
+
+add_filter( 'comment_form_defaults', 'twentyelevenchild_modify_comment_fields' );
+
+function twentyelevenchild_modify_comment_fields( $fields ) {
+$user = wp_get_current_user();
+$user_identity = $user->exists() ? $user->display_name : '';
+$fields['logged_in_as'] = '<p class="logged-in-as">' . sprintf( __( 'Logged in as <a href="%1$s">%2$s</a><br /><a style="margin-top:10px;" class="btn btn-danger btn-sm" href="%3$s" title="Log out of this account">Log out <i class="fa fa-sign-out fa-fw fa-lg" aria-hidden="true"></i></a>' ), admin_url( 'profile.php' ), $user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>';
+
+return $fields;
+}
+add_filter( 'comment_form_defaults', 'bootstrap3_comment_form' );
+function bootstrap3_comment_form( $args ) {
+    $args['comment_field'] = '<div class="form-group comment-form-comment">
+            <label for="comment">' . _x( '<span class="altarGreen">Talk some shit!</span>', 'noun' ) . '</label>
+            <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+        </div>';
+    $args['class_submit'] = 'btn btn-success';
+
+    return $args;
+}
+
+add_filter( 'comment_form_default_fields', 'bootstrap3_comment_form_fields' );
+function bootstrap3_comment_form_fields( $fields ) {
+    $commenter = wp_get_current_commenter();
+
+    $req      = get_option( 'require_name_email' );
+    $aria_req = ( $req ? " aria-required='true'" : '' );
+    $html5    = current_theme_supports( 'html5', 'comment-form' ) ? 1 : 0;
+
+    $fields   =  array(
+        'author' => '<div class="form-group comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></div>',
+        'email'  => '<div class="form-group comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? ' <span class="required">*</span>' : '' ) . '</label> ' .
+                    '<input class="form-control" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></div>',
+    );
+
+    return $fields;
+}
