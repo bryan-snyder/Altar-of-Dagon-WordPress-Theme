@@ -54,6 +54,9 @@ img.aligncenter {
   margin-left: auto;
   margin-right: auto
 }
+.postid-159 form.cart {
+  display: none
+}
 /* ==================== ID's ==================== */
 /* Preload Animation */
 @keyframes move-background {
@@ -230,6 +233,11 @@ to {
   border-color: transparent !important;
   box-shadow: 2px -1px 70px #3dff3d !important
 }
+/* Remove Pipe "add to cart" option */
+a[data-product_id="159"] {
+  display: none !important
+}
+/* Event Manager Map Balloon Text */
 .eme-location-balloon {
   color: #222 !important
 }

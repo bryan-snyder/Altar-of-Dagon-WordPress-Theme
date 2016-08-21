@@ -37,6 +37,10 @@ register_sidebar(array(
   'before_title' => '',
   'after_title' => ''
 ));
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
 //Add Bootstrap Responsive Image class to any uploaded image via dashboard.
 function bootstrap_responsive_images( $html ){
   $classes = 'img-responsive'; // separated by spaces, e.g. 'img image-link'
