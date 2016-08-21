@@ -237,6 +237,15 @@ to {
 a[data-product_id="159"] {
   display: none !important
 }
+.quantity {
+  color: #222
+}
+.related .products {
+  display: none
+}
+.related h2 {
+  display: none
+}
 /* Event Manager Map Balloon Text */
 .eme-location-balloon {
   color: #222 !important
