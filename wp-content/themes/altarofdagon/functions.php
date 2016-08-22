@@ -37,6 +37,8 @@ register_sidebar(array(
   'before_title' => '',
   'after_title' => ''
 ));
+
+//WooCommerce Support
 add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
