@@ -308,6 +308,10 @@ a[data-product_id="159"] {
 .navbar-fixed-top .navbar-collapse {
   background: inherit;
   margin-top: inherit
+}
+/* Strange issue with WooCommerce dropping "well" out at tablet view */
+.single-product .aod-well {
+  min-height: 700px !important;
 }}
 /* ===================================================== */
 /* Medium Devices, Desktops */
@@ -317,7 +321,9 @@ a[data-product_id="159"] {
 /* ==================== ID's ==================== */
 
 /* ==================== Classes ==================== */
-}
+.single-product .aod-well {
+  min-height: 20px !important;
+}}
 /* ===================================================== */
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
