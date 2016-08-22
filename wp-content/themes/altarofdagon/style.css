@@ -231,7 +231,7 @@ to {
   color: #fff;
   background-color:rgba(0, 0, 0, 0.7) !important;
   border-color: transparent !important;
-  box-shadow: 2px -1px 70px #3dff3d !important
+  box-shadow: 2px -1px 70px #3dff3d !important;
 }
 /* Remove Pipe "add to cart" option */
 a[data-product_id="159"] {

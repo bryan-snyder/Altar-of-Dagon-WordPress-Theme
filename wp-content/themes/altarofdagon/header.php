@@ -50,7 +50,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png" alt="Altar of Dagon" width="70" class="altarLogo"></a>
+              <a class="navbar-brand" href="/"><img src="<?php echo get_template_directory_uri(); ?>/img/altar_of_dagon_trans_logo.png" alt="Altar of Dagon" width="70" class="altarLogo"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <?php wp_nav_menu( array(
