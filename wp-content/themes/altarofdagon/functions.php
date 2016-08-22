@@ -67,6 +67,17 @@ register_nav_menus( array(
 	'primary' => __( 'Altar of Navigation', 'altarofdagon' ),
 ));
 
+//Change WP Emails and email address away from "WordPress" as sender
+function aod_mail_name( $email ){
+  return 'Altar of Dagon'; // new email name from sender.
+}
+add_filter( 'wp_mail_from_name', 'aod_mail_name' );
+
+function aod_mail_from ($email ){
+  return 'contact@altarofdagon.com'; // new email address from sender.
+}
+add_filter( 'wp_mail_from', 'aod_mail_from' );
+
 //Responsive URL Video Embeds. Any copied/pasted or other media URL will be automatically made responsive.
 //Currently set to 16:9 aspect ratio.
 add_filter( 'embed_oembed_html', 'custom_oembed_filter',10,4);
