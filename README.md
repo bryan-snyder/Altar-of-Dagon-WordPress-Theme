@@ -17,7 +17,6 @@ To create a mobile first website for the band [**Altar of Dagon**](http://altaro
   * Javascript/jQuery
     * I may integrate Angular.js at a later date, will use with BootStrap rather than Material Design. (my personal preference)
   * [Font Awesome Icons CDN](http://fontawesome.io)
-  * [Google Fonts CDN](https://www.google.com/fonts)
   * [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker) (handles turning WP menus into BootStrap nav menus from dashboard)
 
 ##Plugins:
