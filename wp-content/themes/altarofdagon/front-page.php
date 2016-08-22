@@ -8,7 +8,7 @@
       <div class="col-md-12 well aod-well">
         <h1>Altar of Dagon <small>Newark, Delaware</small></h1>
           <p>When you listen to Altar of Dagon: Be prepared for a voyage to places that exist only in your darkest nightmares and fantasy realms. Heavy guitar riffs, thunderous bass and drums and eerie, clean vocals, primal screams, and backing abyssal gutturals give you an idea of what Altar of Dagon is all about!</p>
-          <p><a class="btn btn-success" href="<?php echo get_site_url(); ?>/biography/">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
+          <p><a class="btn btn-success" href="<?php echo get_site_url(); ?>/altar-of-dagon-biography/">Read More <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a></p>
       </div>
     </div>
   </section>
@@ -85,7 +85,7 @@
             <?php endwhile; ?>
           <div class="clearfix"></div>
           <br />
-        <a class="btn btn-success btn-lg btn-block" href="<?php echo get_site_url(); ?>/news/">News Archive <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
+        <a class="btn btn-success btn-lg btn-block" href="<?php echo get_site_url(); ?>/altar-of-dagon-news-archive/">News Archive <i class="fa fa-angle-double-right fa-fw fa-lg" aria-hidden="true"></i></a>
         <br />
       </div>
     </div>
