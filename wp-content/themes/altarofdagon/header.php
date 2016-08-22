@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msvalidate.01" content="E4F5FA02C51943257359F1B364428943" />
     <title><?php wp_title(); ?><?php bloginfo('description'); ?></title>
       <!-- favicon and branding icons -->
       <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-57x57.png">
