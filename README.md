@@ -1,7 +1,8 @@
 # Altar of Dagon WordPress Theme
 I am creating this WordPress theme for the band I'm currently playing in **Altar of Dagon**. Not going to be much public interest here but I hope to grow it into a larger, more customizable theme that can be distributed.
+8/22/16: Site with Custom Theme has launched.
 
-This WordPress theme will eventually reside here: [altarofdagon.com](http://altarofdagon.com)
+This WordPress theme lives here (live preview): [altarofdagon.com](http://altarofdagon.com)
 
 As you can see, much work to be done. Going from a static build which I just recently added Bootstrap to so that it better performed on mobile devices.
 I'm building this theme from scractch. Feel free to follow my progress and I'm always open to suggestions.
@@ -30,6 +31,13 @@ Here's what I plan to use:
   * Yoast SEO
   * Events Made Easy (for concert dates, directions)
   * WooCommerce to handle merchandise sales
+  * Security-Headers (HTTP Headers)
+  * WP-DB-Backup (Scheduled SQL backups)
+  * Postmatic Social Commenting (Social log in for commenting, doesn't create WP account!)
+  * AddThis (Social Sharing)
+  * Contact Form 7
+  * WP-User-Avatar (Easily handles user avatars, no need for Gravatar integration)
 
 ##Theme Customizer:
 I will be creating theme customizer functions or plugins within this build. If you're looking to learn to create customizer "plug ins", I'll have some knowledge to share.
+As of the lastest update to this file, I haven't added any customizer features. Waiting on user input to see where customizations can be implemented.
