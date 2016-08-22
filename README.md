@@ -20,7 +20,7 @@ To create a mobile first website for the band [**Altar of Dagon**](http://altaro
   * [wp-bootstrap-navwalker](https://github.com/twittem/wp-bootstrap-navwalker) (handles turning WP menus into BootStrap nav menus from dashboard)
 
 ##Plugins:
-At this point only Akismet is installed. I'm not going to track what plugin's I'm using, only ones I create myself that are necessary for the theme to function properly.
+I'm not going to track what plugin's I'm using, only ones I create myself that are necessary for the theme to function properly.
 
 If you're dying to know if I'm using any third party plug-in's... check my .gitignore file, you'll see me blocking them.
 
