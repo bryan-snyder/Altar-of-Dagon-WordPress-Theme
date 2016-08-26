@@ -237,6 +237,10 @@ to {
 a[data-product_id="159"] {
   display: none !important
 }
+/* Remove Downloads from Account Profile */
+.woocommerce-MyAccount-navigation-link--downloads {
+  display: none
+}
 .quantity {
   color: #222
 }
