@@ -15,7 +15,9 @@ get_header(); ?>
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=189708607762706";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id="altarOfLoading"></div>
+<div id="altarOfLoading">
+<p style="margin-top:33%" class="text-center text-success">Loading...</p>
+</div>
 <section id="readTheFuckingContent" data-speed="5" data-type="background">
   <div class="container">
     <br /><br /><br />

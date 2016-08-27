@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-<div id="altarOfLoading"></div>
+<div id="altarOfLoading">
+<p style="margin-top:33%" class="text-center text-success">Loading...</p>
+</div>
   <section id="homeOfDagon" data-speed="4" data-type="background">
     <div class="container">
       <div id="altarOfbandPics">
