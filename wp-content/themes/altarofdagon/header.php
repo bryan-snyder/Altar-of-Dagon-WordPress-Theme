@@ -69,7 +69,7 @@
                 <li><a title="Altar of Dagon on YouTube" href="https://www.youtube.com/user/AltarofDagonmusic" target="_blank"><i class="fa fa-youtube-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
                 <li><a title="Altar of Dagon on Twitter" href="https://twitter.com/AltarofDagon" target="_blank"><i class="fa fa-twitter-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
                 <li><a title="Altar of Dagon on Instagram" href="https://www.instagram.com/altar_of_dagon/" target="_blank"><i class="fa fa-instagram fa-fw fa-2x" aria-hidden="true"></i></a></li>
-                <li><a title="Altar of Dagon on Google Plus" href="https://plus.google.com/u/0/107650889883554005981/about" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
+                <li><a title="Altar of Dagon on Google Plus" href="https://plus.google.com/u/0/107650889883554005981/posts" target="_blank"><i class="fa fa-google-plus-square fa-fw fa-2x" aria-hidden="true"></i></a></li>
               </ul>
             </div>
           </div>

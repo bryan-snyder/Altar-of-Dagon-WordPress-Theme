@@ -1,22 +1,11 @@
 <?php
-// ASYNC LOAD JS FILES
-function band_async_scripts($url)
-{
-    if ( strpos( $url, '#asyncload') === false )
-        return $url;
-    else if ( is_admin() )
-        return str_replace( '#asyncload', '', $url );
-    else
-	return str_replace( '#asyncload', '', $url )."' async='async";
-    }
-add_filter( 'clean_url', 'band_async_scripts',11,1);
 
 //Load JS/CSS dependencies in header or footer
 function enqueue_band_scripts() {
-	wp_enqueue_script( 'bootstrap-js-cdn', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js#asyncload', array('jquery'), null, true);
-	wp_enqueue_script( 'band-js' , get_template_directory_uri() . '/js/band.js#asyncload', array('jquery'), null, true);
-  wp_enqueue_script( 'retina-js' , get_template_directory_uri() . '/js/retina.min.js#asyncload', array('jquery'), null, true);
-	wp_enqueue_script( 'font-awesome-cdn', '//use.fontawesome.com/27505604f5.js#asyncload', false, null, true);
+	wp_enqueue_script( 'bootstrap-js-cdn', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), null, true);
+	wp_enqueue_script( 'band-js' , get_template_directory_uri() . '/js/band.js', array('jquery'), null, true);
+  wp_enqueue_script( 'retina-js' , get_template_directory_uri() . '/js/retina.min.js', array('jquery'), null, true);
+	wp_enqueue_script( 'font-awesome-cdn', '//use.fontawesome.com/27505604f5.js', false, null, true);
 }
 add_action('wp_enqueue_scripts', 'enqueue_band_scripts');
 

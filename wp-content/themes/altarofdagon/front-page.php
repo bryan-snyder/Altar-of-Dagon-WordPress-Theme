@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div id="altarOfLoading">
-<p style="margin-top:33%" class="text-center text-success">Loading...</p>
+<p style="margin-top:39%" class="text-center text-success">(( Loading... ))</p>
 </div>
   <section id="homeOfDagon" data-speed="4" data-type="background">
     <div class="container">
